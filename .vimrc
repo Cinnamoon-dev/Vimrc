@@ -9,7 +9,7 @@ set mouse=a
 " show useful stuff
 set showcmd
 set showmatch
-set showcursorline
+set cursorline
 set number
 set title
 
