@@ -15,3 +15,6 @@ set title
 
 " enable syntax processing
 syntax enable
+
+" choose theme
+colorscheme monokai
