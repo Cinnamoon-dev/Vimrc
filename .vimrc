@@ -17,4 +17,4 @@ set title
 syntax enable
 
 " choose theme
-colorscheme monokai
+colorscheme atom-dark-256 
