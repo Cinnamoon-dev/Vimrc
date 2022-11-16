@@ -18,3 +18,10 @@ syntax enable
 
 " choose theme
 colorscheme atom-dark-256 
+
+" append close
+inoremap { {}<Left>
+inoremap {} {}
+
+inoremap ( ()<Left>
+inoremap () ()
