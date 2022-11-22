@@ -21,7 +21,9 @@ colorscheme atom-dark-256
 
 " append close
 inoremap { {}<Left>
+inoremap {{ {
 inoremap {} {}
 
 inoremap ( ()<Left>
+inoremap (( (
 inoremap () ()
