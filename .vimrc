@@ -10,6 +10,7 @@ set mouse=a
 set showcmd
 set showmatch
 set cursorline
+set cursorcolumn
 set number
 set title
 
@@ -17,7 +18,7 @@ set title
 syntax enable
 
 " choose theme
-colorscheme atom-dark-256 
+colorscheme monokai
 
 " append close
 inoremap { {}<Left>
@@ -27,3 +28,11 @@ inoremap {} {}
 inoremap ( ()<Left>
 inoremap (( (
 inoremap () ()
+
+inoremap [ []<Left>
+inoremap [[ [
+inoremap [] []
+
+inoremap < <><Left>
+inoremap <> <
+inoremap <> <>
