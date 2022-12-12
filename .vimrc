@@ -34,5 +34,5 @@ inoremap [[ [
 inoremap [] []
 
 inoremap < <><Left>
-inoremap <> <
+inoremap << <
 inoremap <> <>
