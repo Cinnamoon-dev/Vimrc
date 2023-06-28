@@ -1,7 +1,8 @@
 " identation config
 set tabstop=4
-set expandtab
+"set expandtab
 set softtabstop=4
+set autoindent
 
 " enable mouse click
 set mouse=a
@@ -10,7 +11,7 @@ set mouse=a
 set showcmd
 set showmatch
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 set number
 set title
 
@@ -39,11 +40,23 @@ inoremap "" ""
 
 " status line
 set laststatus=2
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+set statusline=
+set statusline+=%{StatuslineGit()}
+set statusline+=%#LineNr#
+set statusline+=\ %{HasPaste()}%F%m%r%h\ %w\ %p%%\ %l:%c
 
 function! HasPaste()
     if &paste
         return 'PASTE MODE '
     endif
     return ''
+endfunction
+
+function! GitBranch()
+	return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+	let l:branchname = GitBranch()
+	return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
 endfunction
