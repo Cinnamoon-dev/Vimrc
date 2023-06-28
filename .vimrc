@@ -43,7 +43,12 @@ set laststatus=2
 set statusline=
 set statusline+=%{StatuslineGit()}
 set statusline+=%#LineNr#
-set statusline+=\ %{HasPaste()}%F%m%r%h\ %w\ %p%%\ %l:%c
+set statusline+=\ %{HasPaste()}%F%m%r%h\ 
+set statusline+=\ %w
+set statusline+=\ %#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
 
 function! HasPaste()
     if &paste
