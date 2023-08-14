@@ -1,8 +1,10 @@
 " identation config
 set tabstop=4
-"set expandtab
+set expandtab
 set softtabstop=4
 set autoindent
+set shiftwidth=4
+set si
 
 " enable mouse click
 set mouse=a
@@ -14,6 +16,13 @@ set cursorline
 "set cursorcolumn
 set number
 set title
+
+" useful configs
+set nocompatible
+set encoding=utf-8
+set t_Co=256
+set autoread
+set backspace=indent,eol,start
 
 " enable syntax processing
 syntax enable
