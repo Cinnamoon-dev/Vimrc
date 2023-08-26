@@ -4,7 +4,8 @@ set expandtab
 set softtabstop=4
 set autoindent
 set shiftwidth=4
-set si
+set smartindent
+set smarttab
 
 " enable mouse click
 set mouse=a
