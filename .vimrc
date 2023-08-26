@@ -24,6 +24,7 @@ set encoding=utf-8
 set t_Co=256
 set autoread
 set backspace=indent,eol,start
+set scrolloff=4
 
 " enable syntax processing
 syntax enable
