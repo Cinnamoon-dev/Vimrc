@@ -49,6 +49,10 @@ inoremap " ""<Left>
 inoremap "" "
 inoremap "" ""
 
+inoremap ' ''<Left>
+inoremap '' '
+inoremap '' ''
+
 " status line
 set laststatus=2
 set statusline=
