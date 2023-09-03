@@ -14,9 +14,10 @@ set mouse=a
 set showcmd
 set showmatch
 set cursorline
-"set cursorcolumn
+set cursorcolumn
 set number
 set title
+set showtabline=2
 
 " useful configs
 set nocompatible
