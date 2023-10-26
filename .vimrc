@@ -16,6 +16,7 @@ set showmatch
 set cursorline
 set cursorcolumn
 set number
+set relativenumber
 set title
 set showtabline=2
 
