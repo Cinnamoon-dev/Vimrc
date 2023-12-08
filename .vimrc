@@ -35,27 +35,6 @@ syntax enable
 " choose theme
 colorscheme monokai
 
-" append close
-inoremap { {}<Left>
-inoremap {{ {
-inoremap {} {}
-
-inoremap ( ()<Left>
-inoremap (( (
-inoremap () ()
-
-inoremap [ []<Left>
-inoremap [[ [
-inoremap [] []
-
-inoremap " ""<Left>
-inoremap "" "
-inoremap "" ""
-
-inoremap ' ''<Left>
-inoremap '' '
-inoremap '' ''
-
 " status line
 set laststatus=2
 set statusline=
