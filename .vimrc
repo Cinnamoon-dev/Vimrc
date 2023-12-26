@@ -44,6 +44,10 @@ set incsearch
 " enable syntax processing
 syntax enable
 
+" loading filetype
+filetype plugin on
+filetype indent on
+
 " choose theme
 colorscheme slate
 
