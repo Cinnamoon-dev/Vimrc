@@ -15,6 +15,7 @@ set showcmd
 set showmatch
 set cursorline
 set cursorcolumn
+set colorcolumn=80
 set number
 set relativenumber
 set title
