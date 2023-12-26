@@ -37,6 +37,7 @@ set autoread
 set backspace=indent,eol,start
 set scrolloff=4
 set clipboard+=unnamedplus
+set wildmenu
 
 " enable syntax processing
 syntax enable
