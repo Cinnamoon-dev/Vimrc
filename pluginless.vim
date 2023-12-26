@@ -1,4 +1,5 @@
-source ./plugins.vim
+" uncomment the line below to add vim-plug plugins
+"source ./plugins.vim
 
 " identation config
 set tabstop=4
