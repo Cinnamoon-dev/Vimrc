@@ -20,6 +20,14 @@ set relativenumber
 set title
 set showtabline=2
 set laststatus=2
+set statusline=
+set statusline+=%#LineNr#
+set statusline+=\ %F%m%r%h
+set statusline+=\ %w
+set statusline+=\ %#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
 
 " useful configs
 set nocompatible
