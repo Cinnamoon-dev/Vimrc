@@ -33,32 +33,11 @@ set clipboard+=unnamedplus
 syntax enable
 
 " choose theme
-colorscheme monokai
+colorscheme slate
 
-" status line
-set laststatus=2
-set statusline=
-set statusline+=%{StatuslineGit()}
-set statusline+=%#LineNr#
-set statusline+=\ %{HasPaste()}%F%m%r%h\ 
-set statusline+=\ %w
-set statusline+=\ %#CursorColumn#
-set statusline+=\ %y
-set statusline+=\ %p%%
-set statusline+=\ %l:%c
-
-function! HasPaste()
-    if &paste
-        return 'PASTE MODE '
-    endif
-    return ''
-endfunction
-
-function! GitBranch()
-	return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-endfunction
-
-function! StatuslineGit()
-	let l:branchname = GitBranch()
-	return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
-endfunction
+"netrw
+let g:netrw_keepdir = 0
+let g:netrw_winsize = 25
+" You can temporarily see the banner by using I
+let g:netrw_banner = 0
+let g:netrw_liststyle= 3
