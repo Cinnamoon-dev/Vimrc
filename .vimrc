@@ -19,6 +19,7 @@ set number
 set relativenumber
 set title
 set showtabline=2
+set laststatus=2
 
 " useful configs
 set nocompatible
