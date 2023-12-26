@@ -10,3 +10,4 @@
 - w - go to the beginning of the next word
 - e - go to the end of the next word
 - b - go back to the beginning of the current word or to the end of the previous word
+- :Lex - open the file explorer in the left
