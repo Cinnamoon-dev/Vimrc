@@ -1,3 +1,5 @@
+source ./plugins.vim
+
 " identation config
 set tabstop=4
 set expandtab
