@@ -38,6 +38,8 @@ set backspace=indent,eol,start
 set scrolloff=4
 set clipboard+=unnamedplus
 set wildmenu
+set hlsearch
+set incsearch
 
 " enable syntax processing
 syntax enable
