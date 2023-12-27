@@ -45,6 +45,10 @@ set wildmenu
 set hlsearch
 set incsearch
 
+" buffer configs
+set hidden
+set confirm
+
 " enable syntax processing
 syntax enable
 
