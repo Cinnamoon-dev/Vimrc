@@ -65,6 +65,11 @@ let g:netrw_liststyle= 3
 " setting leader key
 let mapleader = "\\"
 
-" mapping
+" feature mapping
 nnoremap <leader>e :Lex<CR>
 nnoremap <leader>b :ls<CR>:b
+nnoremap <leader>w <C-w>
+
+" navigation mapping
+nnoremap <leader><Tab> :bnext<CR>
+nnoremap <leader><S-Tab> :bprevious<CR>
