@@ -72,7 +72,10 @@ let mapleader = "\\"
 " feature mapping
 nnoremap <leader>e :20Lex<CR>
 nnoremap <leader>b :ls<CR>:b
+
+" window mapping
 nnoremap <leader>w <C-w>
+nnoremap <leader>wv :vs<CR>
 
 " navigation mapping
 nnoremap <leader><Tab> :bnext<CR>
