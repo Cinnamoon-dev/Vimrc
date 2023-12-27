@@ -11,3 +11,11 @@
 - e - go to the end of the next word
 - b - go back to the beginning of the current word or to the end of the previous word
 - :Lex - open the file explorer in the left
+
+## Netrw
+- p - preview the file
+- d - make a directory
+- % - make a file
+- D - remove the file/directory
+- gh - hide/unhide dotfiles
+- i - circle between thin, long, wide and tree listing
