@@ -62,5 +62,9 @@ let g:netrw_winsize = 20
 let g:netrw_banner = 0
 let g:netrw_liststyle= 3
 
+" setting leader key
+let mapleader = "\\"
+
 " mapping
-nnoremap <C-E> :Lex<enter>
+nnoremap <leader>e :Lex<CR>
+nnoremap <leader>b :ls<CR>:b
