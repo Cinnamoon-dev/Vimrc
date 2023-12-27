@@ -70,7 +70,7 @@ let g:netrw_liststyle= 3
 let mapleader = "\\"
 
 " feature mapping
-nnoremap <leader>e :Lex<CR>
+nnoremap <leader>e :20Lex<CR>
 nnoremap <leader>b :ls<CR>:b
 nnoremap <leader>w <C-w>
 
