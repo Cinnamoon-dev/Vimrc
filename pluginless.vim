@@ -76,6 +76,7 @@ nnoremap <leader>b :ls<CR>:b
 " window mapping
 nnoremap <leader>w <C-w>
 nnoremap <leader>wv :vs<CR>
+nnoremap <leader>wh :sp<CR>
 
 " navigation mapping
 nnoremap <leader><Tab> :bnext<CR>
