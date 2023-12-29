@@ -81,3 +81,19 @@ nnoremap <leader>wh :sp<CR>
 " navigation mapping
 nnoremap <leader><Tab> :bnext<CR>
 nnoremap <leader><S-Tab> :bprevious<CR>
+
+" adding autoclose
+inoremap " ""<left>
+inoremap "<CR> "<CR>"<ESC>O
+
+inoremap ' ''<left>
+inoremap '<CR> '<CR>'<ESC>O
+
+inoremap ( ()<left>
+inoremap (<CR> (<CR>)<ESC>O
+
+inoremap [ []<left>
+inoremap [<CR> [<CR>]<ESC>O
+
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
