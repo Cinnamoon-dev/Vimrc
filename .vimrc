@@ -44,6 +44,7 @@ set clipboard+=unnamedplus
 set wildmenu
 set hlsearch
 set incsearch
+set undolevels=1000
 
 " buffer configs
 set hidden
