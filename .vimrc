@@ -70,6 +70,9 @@ let g:netrw_liststyle= 3
 " setting leader key
 let mapleader = "\\"
 
+" autocomplete mapping
+inoremap <leader><Space> <C-n>
+
 " feature mapping
 nnoremap <leader>e :20Lex<CR>
 nnoremap <leader>b :ls<CR>:b
