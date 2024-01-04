@@ -18,4 +18,5 @@
 - % - make a file
 - D - remove the file/directory
 - gh - hide/unhide dotfiles
+- gn - change current root directory
 - i - circle between thin, long, wide and tree listing
