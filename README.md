@@ -23,4 +23,14 @@
 
 ## Useful Commands
 ### Edit Code Block 
-Select a block of text using `Visual Block Mode`, press `capital i (I)` write what you want and press <Esc> twice to write your changes
+- Select a block of text using `Visual Block Mode`
+- Press `capital i (I)` 
+- Write what you want and press <Esc> twice to write your changes
+
+### Change a word at n positions
+- Search for a word using `/`
+- Write the word
+- Choose the occurrence with `n`/`N`
+- Type `cgn` and change the current occurrence
+- Change occurrences with `n`/`N`
+- Press `.` to apply the change to the next found occurrence
