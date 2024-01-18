@@ -49,6 +49,7 @@ set undolevels=1000
 " buffer configs
 set hidden
 set confirm
+set noswapfile
 
 " enable syntax processing
 syntax enable
