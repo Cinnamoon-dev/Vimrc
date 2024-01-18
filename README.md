@@ -25,7 +25,7 @@
 ### Edit Code Block 
 - Select a block of text using `Visual Block Mode` (Ctrl+v in normal mode)
 - Press `capital i (I)` 
-- Write what you want and press <Esc> twice to write your changes
+- Write what you want and press `Esc` twice to write your changes
 
 ### Change a word at n positions
 - Search for a word using `/`
