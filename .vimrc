@@ -1,5 +1,7 @@
-" uncomment the line below to add vim-plug plugins
-" source ./plugins.vim
+" uncomment the lines below to add vim-plug plugins
+" call plug#begin()
+" Plug 'morhetz/gruvbox'
+" call plug#end()
 
 " identation config
 set tabstop=4
