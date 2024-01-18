@@ -20,3 +20,7 @@
 - gh - hide/unhide dotfiles
 - gn - change current root directory
 - i - circle between thin, long, wide and tree listing
+
+## Useful Commands
+### Edit Code Block 
+Select a block of text using `Visual Block Mode`, press `capital i (I)` write what you want and press <Esc> twice to write your changes
