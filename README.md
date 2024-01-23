@@ -24,7 +24,8 @@
 ## Useful Commands
 ### Edit Code Block 
 - Select a block of text using `Visual Block Mode` (Ctrl+v in normal mode)
-- Press `capital i (I)` 
+- Press `capital i (I)` to insert in the beginning
+- Press `capital a (A)` to insert in the end
 - Write what you want and press `Esc` twice to write your changes
 
 ### Change a word at n positions
