@@ -12,6 +12,19 @@
 - b - go back to the beginning of the current word or to the end of the previous word
 - :Lex - open the file explorer in the left
 
+### Insert Mode
+- i - moves cursor one character behind and starts writing
+- a - moves cursor one character forward and starts writing
+- I - moves cursor to the beginning of the line and starts writing
+- A - moves cursor to the end of the line and starts writing
+- o - creates a new line below and starts writing
+- O - creates a new line above and starts writing
+
+### Visual Mode
+- v - select characters
+- V - select lines
+- Ctrl+V - select a block of text
+
 ## Netrw
 - p - preview the file
 - d - make a directory
