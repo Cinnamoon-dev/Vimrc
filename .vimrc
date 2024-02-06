@@ -4,12 +4,11 @@
 " call plug#end()
 
 " identation config
-set tabstop=4
+set tabstop=8
 set expandtab
 set softtabstop=4
 set autoindent
 set shiftwidth=4
-set smartindent
 set smarttab
 
 " enable mouse click
@@ -36,7 +35,6 @@ set statusline+=\ %p%%
 set statusline+=\ %l:%c
 
 " useful configs
-set nocompatible
 set encoding=utf-8
 set t_Co=256
 set autoread
