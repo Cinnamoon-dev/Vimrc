@@ -1,3 +1,5 @@
+require("plugins/plugins")
+
 -- identation config
 vim.opt.tabstop = 8
 vim.opt.expandtab = true
