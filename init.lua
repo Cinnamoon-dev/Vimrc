@@ -9,7 +9,7 @@ vim.opt.shiftwidth = 4
 vim.opt.smarttab = true
 
 -- interface stuff
-    vim.opt.showcmd = true
+vim.opt.showcmd = true
 vim.opt.showmatch = true
 vim.opt.cursorline = true
 vim.opt.number = true
@@ -31,7 +31,8 @@ vim.opt.undolevels = 1000
 
 -- system clipboard
 vim.opt.clipboard = "unnamed"
-vim.keymap.set('n', 'yy', '"+yy')
+vim.keymap.set('n', 'dd', '"+dd')
+Vim.keymap.set('n', 'yy', '"+yy')
 vim.keymap.set('v', 'y', '"+y')
 vim.keymap.set('n', 'p', '"+p')
 
