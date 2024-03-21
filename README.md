@@ -1,8 +1,15 @@
 # Cheatsheet
 
 ## Navigation
-    All of these commands must be called in `NORMAL MODE`.
-
+### Normal Mode
+- i - moves cursor one character behind and go to `INSERT MODE`
+- a - moves cursor one character forward and go to `INSERT MODE`
+- I - moves cursor to the beginning of the line and go to `INSERT MODE`
+- A - moves cursor to the end of the line and go to `INSERT MODE`
+- o - creates a new line below and go to `INSERT MODE`
+- O - creates a new line above and go to `INSERT MODE`
+- gg - moves the cursor to the first line of the file
+- G - moves the cursor to the last line of the file
 - h, j, k, l - left, down, up, right
 - 0 - beginning of the line
 - $ - end of the line
@@ -10,15 +17,9 @@
 - w - go to the beginning of the next word
 - e - go to the end of the next word
 - b - go back to the beginning of the current word or to the end of the previous word
-- :Lex - open the file explorer in the left
 
-### Insert Mode
-- i - moves cursor one character behind and starts writing
-- a - moves cursor one character forward and starts writing
-- I - moves cursor to the beginning of the line and starts writing
-- A - moves cursor to the end of the line and starts writing
-- o - creates a new line below and starts writing
-- O - creates a new line above and starts writing
+### Bindings
+- :Lex - open the file explorer in the left
 
 ### Visual Mode
 - v - select characters
