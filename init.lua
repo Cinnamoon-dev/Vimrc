@@ -59,6 +59,7 @@ vim.cmd.colorscheme("slate")
 -- keymaps
 vim.keymap.set('n', '<leader>e', ':20Lexplore<CR>')
 vim.keymap.set('n', '<leader>b', ':ls<CR>:b')
+vim.keymap.set({'n', 'v', 'i'}, 'Ç', '<Esc>')
 
 -- autoclose
 vim.keymap.set('i', '\"', '\"\"<left>')
