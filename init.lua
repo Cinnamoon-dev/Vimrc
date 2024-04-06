@@ -1,4 +1,4 @@
-require("plugins/plugins")
+require("plugins")
 
 -- identation config
 vim.opt.tabstop = 8
