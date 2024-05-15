@@ -1,5 +1,9 @@
 require("plugins")
 
+-- Editor Modes
+vim.cmd("command Normal set laststatus=2 showtabline=2 number relativenumber")
+vim.cmd("command Zen set laststatus=0 showtabline=0 nonumber norelativenumber")
+
 -- identation config
 vim.opt.tabstop = 8
 vim.opt.expandtab = true
