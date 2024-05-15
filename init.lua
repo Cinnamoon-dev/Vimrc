@@ -37,7 +37,7 @@ vim.opt.undolevels = 1000
 vim.opt.clipboard = "unnamed"
 vim.keymap.set('n', 'dd', '"+dd')
 vim.keymap.set('v', 'd', '"+d')
-Vim.keymap.set('n', 'yy', '"+yy')
+vim.keymap.set('n', 'yy', '"+yy')
 vim.keymap.set('v', 'y', '"+y')
 vim.keymap.set('n', 'p', '"+p')
 
