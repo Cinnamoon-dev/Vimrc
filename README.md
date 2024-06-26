@@ -1,5 +1,10 @@
 # Cheatsheet
 
+## Usual Problems
+### Problems Saving/Writing Files
+#### No write permission
+Use `:w path/newfile` to save the file/buffer in a place you have write permission (e.g. `/tmp`). Then you can replace the original version with the `mv` command.
+
 ## Navigation
 ### Normal Mode
 - i - moves cursor one character behind and go to `INSERT MODE`
@@ -16,8 +21,11 @@
 - $ - end of the line
 - number`<ENTER>` - Go to the line number
 - w - go to the beginning of the next word
-- e - go to the end of the next word
+- W - go to the beginning of the next word ignoring special characters
+- e - go to the end of the current or the next word
+- E - go to the end of the current or the next word ignoring special characters
 - b - go back to the beginning of the current word or to the end of the previous word
+- B - go back to the beginning of the current word or to the end of the previous word ignoring special characters
 
 ### Screen Movement
 - zz/z. - move current line to the center of the screen
