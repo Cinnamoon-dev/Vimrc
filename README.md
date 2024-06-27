@@ -32,6 +32,12 @@ Use `:w path/newfile` to save the file/buffer in a place you have write permissi
 - ^U - scroll half screen up
 - ^D - scroll half screen down
 
+#### Marking your way
+Marks are only available in the current session
+
+- m<key> - mark the line you were
+- '<key> - go back to the line marked with that key
+
 ### Bindings
 - :Lex - open the file explorer in the left
 
