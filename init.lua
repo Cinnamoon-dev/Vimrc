@@ -61,9 +61,9 @@ vim.opt.splitright = true
 vim.cmd.colorscheme("slate")
 
 -- keymaps
-vim.keymap.set('n', '<leader>e', ':20Lexplore<CR>')
+vim.keymap.set('n', '<leader>e', ':20Lexplore<CR><C-l>')
 vim.keymap.set('n', '<leader>b', ':ls<CR>:b')
-vim.keymap.set({'n', 'v', 'i'}, 'Ç', '<Esc>')
+vim.keymap.set({'n', 'v', 'i'}, 'ç', '<Esc>')
 
 -- autoclose
 vim.keymap.set('i', '\"', '\"\"<left>')
