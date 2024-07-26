@@ -1,7 +1,13 @@
-" uncomment the lines below to add vim-plug plugins
-" call plug#begin()
-" Plug 'morhetz/gruvbox'
-" call plug#end()
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin()
+    Plug 'morhetz/gruvbox'
+    Plug 'Townk/vim-autoclose'
+call plug#end()
 
 " identation config
 set tabstop=8
