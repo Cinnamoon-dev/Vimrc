@@ -11,10 +11,10 @@ call plug#end()
 
 " identation config
 set tabstop=8
-set expandtab
 set softtabstop=4
-set autoindent
 set shiftwidth=4
+set noexpandtab
+set autoindent
 set smarttab
 
 " enable mouse click
@@ -93,18 +93,3 @@ nnoremap <leader>wh :sp<CR>
 nnoremap <leader><Tab> :bnext<CR>
 nnoremap <leader><S-Tab> :bprevious<CR>
 
-" adding autoclose
-inoremap " ""<left>
-inoremap "<CR> "<CR>"<ESC>O
-
-inoremap ' ''<left>
-inoremap '<CR> '<CR>'<ESC>O
-
-inoremap ( ()<left>
-inoremap (<CR> (<CR>)<ESC>O
-
-inoremap [ []<left>
-inoremap [<CR> [<CR>]<ESC>O
-
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
