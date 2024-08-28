@@ -6,7 +6,7 @@ endif
 
 call plug#begin()
     Plug 'morhetz/gruvbox'
-    Plug 'catppuccin/vim', as { 'as': 'catppuccin' }
+    Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
     Plug 'jiangmiao/auto-pairs'
     Plug 'sheerun/vim-polyglot'
