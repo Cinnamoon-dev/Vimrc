@@ -6,7 +6,10 @@ endif
 
 call plug#begin()
     Plug 'morhetz/gruvbox'
-    Plug 'Townk/vim-autoclose'
+    Plug 'catppuccin/vim', as { 'as': 'catppuccin' }
+
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " identation config
