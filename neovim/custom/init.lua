@@ -63,3 +63,5 @@ vim.cmd.colorscheme("min-theme")
 -- keymaps
 vim.keymap.set('n', '<leader>e', ':20Lexplore<CR><C-l>')
 vim.keymap.set('n', '<leader>b', ':ls<CR>:b')
+vim.keymap.set('n', ';', ':')
+vim.keymap.set('n', ':', ';')

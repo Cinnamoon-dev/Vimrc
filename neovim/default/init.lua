@@ -83,3 +83,6 @@ vim.keymap.set('i', '[<CR>', '[<CR>]<ESC>O')
 vim.keymap.set('i', '{', '{}<left>')
 vim.keymap.set('i', '{}', '{}')
 vim.keymap.set('i', '{<CR>', '{<CR>}<ESC>O')
+
+vim.keymap.set('n', ';', ':')
+vim.keymap.set('n', ':', ';')
