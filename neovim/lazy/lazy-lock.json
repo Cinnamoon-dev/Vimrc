@@ -1,0 +1,8 @@
+{
+  "autoclose.nvim": { "branch": "main", "commit": "3f86702b54a861a17d7994b2e32a7c648cb12fb1" },
+  "gruvbox": { "branch": "master", "commit": "f1ecde848f0cdba877acb0c740320568252cc482" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "min-theme.nvim": { "branch": "main", "commit": "29fe6f031202619e6285789f47ce37ead5165b8d" },
+  "nvim-treesitter": { "branch": "master", "commit": "6389ceb1758b8f62a15194e3b790e33268304cb8" },
+  "vim-monokai-tasty": { "branch": "master", "commit": "c585c4ff0744315c6c03fd54afa7c8ca23b039c0" }
+}
