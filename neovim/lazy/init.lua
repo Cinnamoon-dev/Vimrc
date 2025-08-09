@@ -16,6 +16,7 @@ vim.opt.shiftwidth = 4
 vim.opt.smarttab = true
 
 -- interface stuff
+vim.opt.signcolumn = "yes"
 vim.opt.showcmd = true
 vim.opt.showmatch = true
 vim.opt.cursorline = true
@@ -28,6 +29,7 @@ vim.opt.statusline = "%#LineNr# %F%m%r%h %w %#CursorColumn# %y %p%% %l:%c"
 vim.opt.fillchars = { eob = " " }
 
 -- general configs
+vim.opt.updatetime = 300
 vim.opt.encoding = "utf-8"
 vim.opt.autoread = true
 vim.opt.scrolloff = 0
