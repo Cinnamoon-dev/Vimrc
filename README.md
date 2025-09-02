@@ -69,3 +69,9 @@ Marks are only available in the current session
 - Type `cgn` and change the current occurrence
 - Change occurrences with `n`/`N`
 - Press `.` to apply the change to the next found occurrence
+
+## Conquer of Completion
+- Use "K" in normal mode to get the documentation for the current variable, function or class
+- Ctrl + spacebar triggers completion
+- Use :CocInstall coc-pyright coc-json coc-tsserver coc-yaml
+    - Or just look in the [wiki](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
