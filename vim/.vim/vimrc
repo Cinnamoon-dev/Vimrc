@@ -10,6 +10,8 @@ call plug#begin()
 
     Plug 'jiangmiao/auto-pairs'
     Plug 'sheerun/vim-polyglot'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 " identation config
@@ -24,15 +26,16 @@ set smarttab
 set mouse=a
 
 " show useful stuff
+set signcolumn=yes
 set showcmd
 set showmatch
 set cursorline
-set cursorcolumn
-set colorcolumn=80
+"set cursorcolumn
+"set colorcolumn=80
 set number
 set relativenumber
 set title
-set showtabline=2
+"set showtabline=2
 set laststatus=2
 set statusline=
 set statusline+=%#LineNr#
@@ -54,6 +57,9 @@ set wildmenu
 set hlsearch
 set incsearch
 set undolevels=1000
+set nobackup
+set nowritebackup
+set updatetime=300
 
 " buffer configs
 set hidden
@@ -68,7 +74,8 @@ filetype plugin on
 filetype indent on
 
 " choose theme
-colorscheme slate
+colorscheme gruvbox
+set background=dark
 
 " netrw
 let g:netrw_keepdir = 0
@@ -96,3 +103,46 @@ nnoremap <leader>wh :sp<CR>
 nnoremap <leader><Tab> :bnext<CR>
 nnoremap <leader><S-Tab> :bprevious<CR>
 
+" coc mappings
+" use tab and shift+tab to cycle in suggestions
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+" use enter to accept a suggestion
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+
+" GoTo code navigation
+nmap <silent><nowait> gd <Plug>(coc-definition)
+nmap <silent><nowait> gy <Plug>(coc-type-definition)
+nmap <silent><nowait> gi <Plug>(coc-implementation)
+nmap <silent><nowait> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor
+autocmd CursorHold * silent call CocActionAsync('highlight')
