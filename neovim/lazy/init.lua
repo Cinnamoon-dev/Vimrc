@@ -65,4 +65,9 @@ vim.cmd.colorscheme("min-theme")
 
 -- keymaps
 vim.keymap.set('n', '<leader>e', ':20Lexplore<CR><C-l>')
-vim.keymap.set('n', '<leader>b', ':ls<CR>:b')
+
+-- Fzf-Lua keymaps
+vim.keymap.set('n', '<leader>f', ':FzfLua files<CR>')
+vim.keymap.set('n', '<leader>b', ':FzfLua buffers<CR>') -- ':ls<CR>:b'
+vim.keymap.set('n', '<leader>s', ':FzfLua live_grep<CR>')
+vim.keymap.set('n', '<leader>g', ':FzfLua git_status<CR>')
