@@ -21,7 +21,23 @@ vim.opt.relativenumber = true
 vim.opt.title = true
 -- vim.opt.showtabline = 2
 vim.opt.laststatus = 2
-vim.opt.statusline = "%#LineNr# %F%m%r%h %w %#CursorColumn# %y %p%% %l:%c"
+
+function _G.mode_label()
+  local modes = {
+    n = "NORMAL",
+    i = "INSERT",
+    v = "VISUAL",
+    V = "V-LINE",
+    c = "COMMAND",
+    R = "REPLACE",
+    t = "TERMINAL",
+  }
+  local m = vim.api.nvim_get_mode().mode
+  return modes[m] or m
+end
+
+vim.opt.showmode = false
+vim.opt.statusline = " %#StatusLineMode# %{v:lua.mode_label()} %#LineNr# %F%m%r%h%w %#CursorColumn# %y %p%% %l:%c"
 vim.opt.fillchars = { eob = " " }
 
 -- general configs
